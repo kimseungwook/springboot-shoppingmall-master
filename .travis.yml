@@ -24,7 +24,7 @@ before_deploy:
 
 deploy:
   - provider: s3
-    access_key_id: $_ACCESS_KEY # Travis repo settings에 설정된 값
+    access_key_id: $ACCESS_KEY # Travis repo settings에 설정된 값
     secret_access_key: $SECRET_KEY # Travis repo settings에 설정된 값
     bucket: sp-ws-deploy #S3 버킷
     region: ap-northeast-2
