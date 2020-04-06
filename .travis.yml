@@ -24,8 +24,8 @@ before_deploy:
 
 deploy:
   - provider: s3
-    access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
-    secret_access_key: $AWS_SECRET_KEY # Travis repo settings에 설정된 값
+    access_key_id: AKIAUBTEGRFQKSHTBAEJ # Travis repo settings에 설정된 값
+    secret_access_key: wqGG+j7A/Sw94TJQbpbRxoilwerrEG0Op1DjfOxK # Travis repo settings에 설정된 값
     bucket: sp-ws-deploy #S3 버킷
     region: ap-northeast-2
     skip_cleanup: true
@@ -37,8 +37,8 @@ deploy:
       branch: master
 
   - provider: codedeploy
-    access_key_id: $AWS_ACCESS_KEY # Travis repo settings에 설정된 값
-    secret_access_key: $AWS_SECRET_KEY # Taccess_key_idravis repo settings에 설정된 값
+    access_key_id: AKIAUBTEGRFQKSHTBAEJ # Travis repo settings에 설정된 값
+    secret_access_key: wqGG+j7A/Sw94TJQbpbRxoilwerrEG0Op1DjfOxK # Taccess_key_idravis repo settings에 설정된 값
     bucket: sp-ws-deploy # S3 버킷
     key: springboot-webservice.zip # S3 버킷에 저장된 shoppingmall-project.zip 파일을 EC2로 배포
     bundle_type: zip
